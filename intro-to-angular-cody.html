@@ -1,0 +1,19 @@
+<!DOCTPYE html>
+<html>
+  <head>
+    <title>Into To Angular</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+    <script type="text/javascript" src="angular.js"></script>
+  </head>
+  <body ng-app="myAppOne">
+    <div ng-controller="myControllerOne">
+      <!-- Intro to Angular - Part I  -->
+      <input type="button" value="Enter" ng-click="printMessage()"/>
+      <h1 ng-show="show">{{ message }}</h1>
+      <input type="button" value="Show unordered list" ng-click="printUL()" />
+      <ul ng-show="show" ng-repeat="site in sites">
+        <li>{{ site }}</li>
+      </ul>
+    </div>
+  </body>
+</html>
